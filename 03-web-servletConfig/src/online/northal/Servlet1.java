@@ -45,6 +45,7 @@ public class Servlet1 extends HttpServlet {
         resp.getWriter().println("<p>param1: " + param1 + "</p>");
         resp.getWriter().println("<p>param2: " + param2 + "</p>");
         resp.getWriter().println("<p>encoding: " + encoding + "</p>");
+        resp.getWriter().println("<p>从servlet2 set config attr: " + servletContext.getAttribute("contextPath") + "</p>");
         resp.getWriter().println("</body></html>");
         resp.getWriter().flush();
         resp.getWriter().close();
