@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>温馨咖啡馆 - 您的休闲好去处</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f9f3e9;
+            color: #5d4037;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #5d4037;
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #f9f3e9;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 2rem;
+        }
+
+        .nav-links a {
+            color: #f9f3e9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            margin-top: 60px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #5d4037;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .section {
+            padding: 4rem 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+        }
+
+        .menu {
+            background-color: white;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .menu-item {
+            background-color: #f9f3e9;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .menu-item-content {
+            padding: 1.5rem;
+        }
+
+        .menu-item .price {
+            color: #5d4037;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        .about {
+            background-color: #f5f5f5;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .contact {
+            background-color: #5d4037;
+            color: white;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        footer {
+            background-color: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">温馨咖啡馆</div>
+        <ul class="nav-links">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#menu">菜单</a></li>
+            <li><a href="#about">关于我们</a></li>
+            <li><a href="#contact">联系方式</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>温馨咖啡馆</h1>
+        <p>品味生活，享受每一杯咖啡带来的美妙时光</p>
+        <a href="#menu" class="btn">查看菜单</a>
+    </div>
+</section>
+
+<section class="section menu" id="menu">
+    <div class="container">
+        <h2 class="section-title">我们的菜单</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="美式咖啡">
+                <div class="menu-item-content">
+                    <h3>美式咖啡</h3>
+                    <p>经典醇厚的美式咖啡，唤醒您的每一个清晨。</p>
+                    <div class="price">¥18</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="拿铁咖啡">
+                <div class="menu-item-content">
+                    <h3>拿铁咖啡</h3>
+                    <p>丝滑牛奶与浓缩咖啡的完美融合，口感绵密。</p>
+                    <div class="price">¥22</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1560106426-c90ed1a73697?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="卡布奇诺">
+                <div class="menu-item-content">
+                    <h3>卡布奇诺</h3>
+                    <p>浓郁的咖啡底蕴，搭配轻盈奶泡，层次丰富。</p>
+                    <div class="price">¥24</div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1579888944880-d98341245702?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="摩卡咖啡">
+                <div class="menu-item-content">
+                    <h3>摩卡咖啡</h3>
+                    <p>巧克力与咖啡的美妙邂逅，甜而不腻。</p>
+                    <div class="price">¥26</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section about" id="about">
+    <div class="container">
+        <h2 class="section-title">关于我们</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1554118879-e456988d710f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="咖啡馆内景">
+            </div>
+            <div>
+                <p>温馨咖啡馆创立于2010年，致力于为顾客提供高品质的咖啡体验。我们精选全球各地的优质咖啡豆，由专业的咖啡师为您现场烘焙、冲泡。</p>
+                <p>在这里，您不仅能品尝到醇香的咖啡，还能享受温馨舒适的环境。无论是工作、学习还是与朋友小聚，温馨咖啡馆都是您的理想选择。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section contact" id="contact">
+    <div class="container">
+        <h2 class="section-title">联系我们</h2>
+        <div class="contact-info">
+            <div>
+                <h3>营业时间</h3>
+                <p>周一至周五: 08:00 - 22:00</p>
+                <p>周六至周日: 09:00 - 23:00</p>
+            </div>
+            <div>
+                <h3>地址</h3>
+                <p>城市中心路123号</p>
+                <p>文化广场旁</p>
+            </div>
+            <div>
+                <h3>联系方式</h3>
+                <p>电话: 123-456-7890</p>
+                <p>邮箱: info@wenyincafe.com</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 温馨咖啡馆 版权所有</p>
+</footer>
+</body>
+</html>
